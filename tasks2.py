@@ -1,8 +1,5 @@
 print('1)')
-list = []
-for i in range (5):
-    numbers = int(input('Enter you number: '))
-    list.append(numbers)
+list = [int(input(f'Enter number #{i}: ')) for i in range(1,5+1)]
 print(list)
 
 print('2)')
@@ -11,10 +8,7 @@ A.pop()
 print(A)
 
 print('3)')
-A = []
-for i in range (10):
-    numbers = int(input('Enter you number: '))
-    A.append(numbers)
+A = [int(input(f'Enter number #{i}: ')) for i in range(1,10+1)]
 N = int(input('Enter number to search: '))
 x=0
 for i in A:
@@ -23,32 +17,19 @@ for i in A:
 print(A.count(N))
 
 print('4)')
-
 N = int(input('Enter the total number of digits: '))
-A = []
-for i in range(N):
-    numbers = int(input('Enter your number: '))
-    A.append(numbers)
+A = [int(input(f'Enter number #{i}: ')) for i in range(1,N+1)]
 A.reverse()
 print(A)
 
 print('5)')
-A = []
-for i in range(5):
-    numbers = int(input('Enter you number: '))
-    A.append(numbers)
-C = []
-for numbers in A:
-    if numbers > 5:
-        C.append(numbers)
+A = [int(input(f'Enter number #{i}: ')) for i in range(1,5+1)]
+C = [i for i in A if i > 5]
 print(C)
 
 print('6)')
 N = int(input('Enter the total number of digits: '))
-A = []
-for i in range(N):
-    numbers = int(input('Enter your number: '))
-    A.append(numbers)
+A = [int(input(f'Enter number #{i}: ')) for i in range(1,N+1)]
 min = A[0]
 max = A[0]
 for i in A:
