@@ -1,0 +1,43 @@
+1: SyntaxError
+SyntaxError - виникає при не дотриманні загальної норми мови програмування.
+Наприклад:пропуск двокрапки, не закриття скобки, тощо...
+Приклад:
+print('Hello world'
+Результат:
+SyntaxError: illegal target for annotation
+
+2: NameError
+NameError - виникає, якщо викликати перемінну, яка не була створена.
+Наприклад: виводити суму двох перемінних a і b, коли b - не існує в коді.
+Приклад:
+a = 5
+print(a+b)
+Результат:
+NameError: name 'b' is not defined
+
+3: ValueError
+ValueError - виникає, коли функція викликається з правильним типом аргументу,
+але з неправильним значенням.
+Наприклад: виклик функції int аби переобразити текст у ціле число.
+Приклад:
+int('Hello world')
+Результат:
+ValueError: invalid literal for int() with base 10: 'Hello world'
+
+4: TypeError
+TypeError - виникає, коли тип даних об’єкта в операції є невідповідним.
+Наприклад: це може статися, коли операція виконується над об’єктом неправильного типу
+або вона не підтримується для об’єкта
+Приклад:
+10 + "3"
+Результат:
+TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+5: ImportError
+ImportError - виникає, коли викликаєтся модуль або його атрибут який не може бути знайденим
+або не існує.
+Наприклад: імпорт неіснуючого атрибуту з існуючого модуля.
+Приклад:
+from collections import abc123
+Результат:
+ImportError: cannot import name 'abc123' from 'collections'
