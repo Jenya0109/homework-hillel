@@ -7,19 +7,13 @@ print(f'Debtors for June and July: {",".join(debtors_june&debtors_july)}')
 print(f'Debtors for only July: {",".join(debtors_july-debtors_june)}')
 
 print('2)')
-camel_list=['FirstItem', 'FriendsList', 'MyTuple']
-snake_list =[]
-for i in range(len(camel_list)):
+camel_list = ['FirstItem', 'FriendsList', 'MyTuple']
+snake_list = []
+for camel_case in camel_list:
     snake = '_'
-    for new_list in camel_list[i]:
+    for new_list in camel_case:
         if new_list.isupper():
-            snake+= '_'
-        snake+= new_list.lower()
+            snake += '_'
+        snake += new_list.lower()
     snake_list.append(snake.lstrip('_'))
 print(camel_list,'\n',snake_list)
-
-
-
-
-
-
