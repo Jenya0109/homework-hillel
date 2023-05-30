@@ -5,7 +5,7 @@ dict = [{"key1": "hello"},
         {"key2": "hello"},
         {"key3": "hello"},
         {"key4": "hello"}]
-with open("../dict.txt", "wb") as f:
+with open("dict.txt", "wb") as f:
     pickle.dump(dict, f)
 #2)
 a = {"key": 1,
