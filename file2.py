@@ -20,5 +20,5 @@ for key, value in a.items():
 for key, value in b.items():
     if key not in c:
         c[key] = value
-with open("../result.json", "w") as f:
+with open("result.json", "w") as f:
     json.dump(c, f)
